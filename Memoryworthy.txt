@@ -1,0 +1,3 @@
+x & (x-1) equals x with its lowest set bit erased ||| i.e: 1011000 -> get 1010000 
+x & ~(x-1) extracts the lowest set bit of x ||| i.e: 1011000 -> get 1000
+
