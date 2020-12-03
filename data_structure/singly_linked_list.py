@@ -18,6 +18,8 @@ class LinkedList:
             curr = curr.next
         print("done printing")
     
+
+    # add node at the end of the list
     def add(self, value):
         curr = self.head
         if not curr:
@@ -31,6 +33,7 @@ class LinkedList:
         
         curr.next = Node(value)
 
+    # add a node at pos'th of the list
     def insert(self, value, pos):
         curr = self.head
         if not curr:
@@ -54,7 +57,7 @@ class LinkedList:
         curr.next = new_node
 
 
-
+    # remove a node if it exists, otherwise returns None
     def remove(self, value: int) -> Node:
         curr = self.head
         removedNode = None

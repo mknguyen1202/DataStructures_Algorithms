@@ -1,10 +1,16 @@
 class Node:
 
-    def __init__(self, value):
+    def __init__(self, value, prev, next):
         self.value = value
-        self.next = None
+        self.prev = prev
+        self.next = next
 
 
+
+
+# Time Complexity:
+# search: O(n)
+# insert, remove: O(1)
 class DoublyLinkedList:
 
     def __init__(self):
@@ -52,3 +58,5 @@ class DoublyLinkedList:
         return str(lst)
 
     
+if __name__=='__main__':
+    pass
